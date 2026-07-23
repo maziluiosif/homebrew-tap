@@ -4,19 +4,19 @@
 class Oxi < Formula
   desc "Standalone coding agent chat UI (Rust + egui)"
   homepage "https://github.com/maziluiosif/oxi"
-  version "0.21.0"
+  version "0.21.1"
   license "MIT"
 
   on_macos do
     depends_on arch: :arm64
-    url "https://github.com/maziluiosif/oxi/releases/download/v0.21.0/oxi-macos-arm64.tar.gz"
-    sha256 "f1f4965a845c74c3ff424965487f6f50328b1d7d6cdb7919806234fc165c856a"
+    url "https://github.com/maziluiosif/oxi/releases/download/v0.21.1/oxi-macos-arm64.tar.gz"
+    sha256 "52f461f3777c47122b04aa0442cf13412b8bb6d3cb3a5512d8030914936486f0"
   end
 
   on_linux do
     depends_on arch: :x86_64
-    url "https://github.com/maziluiosif/oxi/releases/download/v0.21.0/oxi-linux-x86_64.tar.gz"
-    sha256 "7f3a26de4e765cc9a202e58eadea7fc89b2aa4e481ac6f3317edf6acfa8357dc"
+    url "https://github.com/maziluiosif/oxi/releases/download/v0.21.1/oxi-linux-x86_64.tar.gz"
+    sha256 "f9df3f8ed876c45bfaf8c3e0f197c06172532c9b90f2ab59191169522ab75e84"
   end
 
   def install
