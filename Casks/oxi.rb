@@ -19,7 +19,7 @@ cask "oxi" do
       oxi is ad-hoc signed but not Apple-notarized. Install it explicitly without
       quarantine only when you trust its source and published release:
 
-        brew install --cask --no-quarantine maziluiosif/tap/oxi
+        HOMEBREW_CASK_OPTS="--no-quarantine" brew install --cask maziluiosif/tap/oxi
 
       Run `oxi` from a project directory to open it as the first workspace.
     EOS
