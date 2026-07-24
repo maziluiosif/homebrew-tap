@@ -11,7 +11,7 @@ project and its published release:
 
 ```sh
 brew tap maziluiosif/tap
-brew install --cask --no-quarantine oxi
+HOMEBREW_CASK_OPTS="--no-quarantine" brew install --cask oxi
 ```
 
 This installs `oxi.app` in `/Applications` and exposes the `oxi` command.
