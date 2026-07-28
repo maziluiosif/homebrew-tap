@@ -6,15 +6,19 @@ Homebrew tap for [oxi](https://github.com/maziluiosif/oxi), a native, local-firs
 
 ### macOS (Apple Silicon)
 
-oxi is ad-hoc signed but not Apple-notarized. Only bypass quarantine when you trust the
-project and its published release:
-
 ```sh
 brew tap maziluiosif/tap
-HOMEBREW_CASK_OPTS="--no-quarantine" brew install --cask oxi
+brew install --cask oxi
 ```
 
 This installs `oxi.app` in `/Applications` and exposes the `oxi` command.
+
+oxi is ad-hoc signed but not Apple-notarized, so macOS quarantines it. Clear the
+quarantine attribute once after installing:
+
+```sh
+xattr -cr /Applications/oxi.app
+```
 
 ### Linux (x86_64)
 
