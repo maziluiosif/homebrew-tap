@@ -2,11 +2,11 @@
 # maziluiosif/oxi (.github/workflows/release.yml, "homebrew" job).
 # Manual edits will be overwritten on the next release.
 cask "oxi" do
-  version "1.25.0"
+  version "1.26.0"
 
   on_macos do
-    sha256 "f45e53f7a0d3cd67451ce40036baa6a3e080dbc05596d64dea41bea359a2d4dd"
-    url "https://github.com/maziluiosif/oxi/releases/download/v1.25.0/oxi-macos-arm64.tar.gz",
+    sha256 "a3beb7275edc0902aa8df1d4390616156345bb7473a8c3ccb216bcd358efd51e"
+    url "https://github.com/maziluiosif/oxi/releases/download/v1.26.0/oxi-macos-arm64.tar.gz",
         verified: "github.com/maziluiosif/oxi/"
 
     depends_on arch: :arm64
@@ -29,8 +29,8 @@ cask "oxi" do
   end
 
   on_linux do
-    sha256 "41249cf1da16017b8eb661cb12540ca2fe2bfb00cc60a458736eadfba0954653"
-    url "https://github.com/maziluiosif/oxi/releases/download/v1.25.0/oxi-linux-x86_64.tar.gz",
+    sha256 "c1a546c4538cc463daff0ef5cb6fd65d7dfd7cec81c0cd8643e69451e0e0af4c"
+    url "https://github.com/maziluiosif/oxi/releases/download/v1.26.0/oxi-linux-x86_64.tar.gz",
         verified: "github.com/maziluiosif/oxi/"
 
     depends_on arch: :x86_64
